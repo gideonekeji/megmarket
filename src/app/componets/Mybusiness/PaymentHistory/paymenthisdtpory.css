@@ -1,0 +1,65 @@
+/* Card wrapper */
+.paymenthistory {
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+/* Dark mode */
+.paymenthistory.dark {
+  background: #2f2f2f;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+/* Hover */
+.paymenthistory:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Header section */
+.paymenthistory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 30px 20px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.paymenthistory.dark .paymenthistory-header {
+  background: #424242;
+}
+
+/* Dropdown */
+.paymenthistorydropdwon {
+  border-top: 1px solid #ececec;
+  background: #fafafa;
+  padding: 0 20px;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.paymenthistorydropdwon.open {
+  padding: 16px 20px;
+  max-height: 500px;
+  opacity: 1;
+}
+
+.paymenthistorydropdwon.closed {
+  padding: 0 20px;
+  max-height: 0;
+  opacity: 0;
+}
+
+/* Dark mode dropdown */
+.paymenthistory.dark .paymenthistorydropdwon {
+  background: #333;
+  border-top: 1px solid #444;
+}

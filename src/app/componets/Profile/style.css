@@ -1,0 +1,8 @@
+.profileimageborderocolor {
+  border: 3px solid transparent; /* Makes sure the border is applied */
+  border-radius: 50%; /* Ensures the image remains circular */
+  background-image: linear-gradient(327.99deg, #005aae 17.81%, #ffffff 64.02%);
+  background-origin: border-box; /* Ensures the background gradient applies to the border */
+  background-clip: content-box, border-box; /* Applies the gradient to the border area */
+}
+

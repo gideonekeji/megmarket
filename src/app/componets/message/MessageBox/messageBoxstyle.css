@@ -1,0 +1,26 @@
+.leftsidebox {
+  box-shadow: 5px 6px 25.3px 0px #00000026;
+  background: #ffffff;
+}
+
+.rightsideboxleftsidechat {
+  background: linear-gradient(180deg, #cccccc 0%, #939393 100%);
+}
+
+.leftsideboxrightsidechat {
+  background: linear-gradient(180deg, #41348c 0%, #0044a9 100%);
+}
+
+.bordercoor {
+  box-shadow: 5px 6px 25.3px 0px #00000026;
+}
+
+.border-colormessagebox {
+  border: 1.12px solid #ececec;
+  box-shadow: 2px 4px 14.4px 0px #0000000f;
+}
+
+.main-borderclor {
+  border: 1.3px solid #ececec;
+  box-shadow: 6.6px 13.2px 47.53px 0px #0000000f;
+}

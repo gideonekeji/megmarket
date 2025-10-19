@@ -1,0 +1,115 @@
+.inputboxborder {
+  border: 1.12px solid #226FE475;
+}
+
+.inputboxborder:focus {
+  border: 1.12px solid #226FE4b9;
+}
+
+.border-color {
+  border: 1.12px solid #ececec;
+  box-shadow: 2px 4px 14.4px 0px #0000000f;
+}
+
+.border-color:focus {
+  border: 1.12px solid #226FE4b9;
+}
+
+.locationinputobrder {
+  border: 1px solid #dbdbdb;
+}
+
+.locationinputobrder:focus {
+  border: 1px solid #dbdbdb;
+}
+
+.inputboxbgcolor {
+  background: #226FE427;
+}
+
+.btnshadow {
+  box-shadow: 0px 2.77px 13.87px 0px #0000000f;
+}
+
+.typeborder {
+  border-bottom: 1px solid #eeeeee;
+  backdrop-filter: blur(7.199999809265137px);
+  background: #00000008;
+}
+
+.typeborder:focus {
+  border-bottom: 1px solid #226FE4b9;
+}
+
+.typeborderbtn {
+  border: 1px solid #226FE4;
+}
+
+.bordercard {
+  border: 1.6px solid #226FE4;
+}
+
+.bordercardbtn {
+  border: 1.6px solid #226FE4;
+}
+
+.circlbordercolor {
+  border: 1px solid #226FE4;
+}
+
+.inputboxborder {
+  border: 1.12px solid #226FE4;
+}
+
+.inputboxborder:focus {
+  border: 1.12px solid #226FE4;
+}
+
+.border-color {
+  border: 1.12px solid #ececec;
+  box-shadow: 2px 4px 14.4px 0px #0000000f;
+}
+
+.border-color:focus {
+  border: 1.12px solid #226FE4b9;
+}
+
+.locationinputobrder {
+  border: 1px solid #dbdbdb;
+}
+
+.locationinputobrder:focus {
+  border: 1px solid #dbdbdb;
+}
+
+.inputboxbgcolor {
+  background: #226FE421;
+}
+
+.btnshadow {
+  box-shadow: 0px 2.77px 13.87px 0px #0000000f;
+}
+
+.typeborder {
+  border-bottom: 1px solid #eeeeee;
+  backdrop-filter: blur(7.199999809265137px);
+  background: #00000008;
+}
+
+.typeborder:focus {
+  border-bottom: 1px solid #226FE4b9;
+}
+
+.typeborderbtn {
+  border: 1px solid #226FE4;
+}
+
+.bordercard {
+  border: 1.6px solid #226FE44a;
+}
+
+
+.bordercardbtn{
+  border: 1.6px solid #226FE4A1
+}
+

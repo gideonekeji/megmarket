@@ -1,0 +1,9 @@
+.border {
+  border: 1px solid #ffffff30;
+}
+
+.stroke-text {
+  color: transparent;
+  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color: white;
+}

@@ -1,0 +1,33 @@
+.leftsidesponsor {
+  border-bottom: 2px solid #ececec3d;
+}
+
+/* for locartion */
+
+.gm-style-mtc-bbw {
+  display: none !important;
+}
+
+/* In your CSS or stylesheet */
+.input-important {
+  position: absolute !important;
+  left: 33px !important;
+  top: 29px !important;
+}
+
+#inputboxrange {
+  box-shadow: 1.86px 3.72px 13.38px 0px #0000000f;
+  border-bottom: 0.93px solid #ececec;
+}
+
+#Audiancedetail {
+  border: 1.61px solid #226FE429;
+}
+
+.bordercolornewCampain {
+  border: 2px solid #226FE4;
+}
+
+.bordercolornewCampain12 {
+  border: 1.61px solid #226FE45C;
+}

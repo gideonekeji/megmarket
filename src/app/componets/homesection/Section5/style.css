@@ -1,0 +1,10 @@
+/* In your global CSS file or within the component's styles */
+.slick-slide {
+  box-shadow: none !important; /* Remove the shadow */
+}
+
+.slick-track {
+  box-shadow: none !important; /* If shadow appears on the track container */
+}
+
+

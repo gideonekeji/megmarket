@@ -1,0 +1,13 @@
+.cardborder {
+  border: 1px solid #00000014;
+  box-shadow: 2px 4px 14.4px 0px #0000000f;
+}
+
+.btnbordercolor {
+  border: 0.76px solid #226FE4;
+}
+
+.borderxcolorwithshado {
+  box-shadow: 0px 2px 10px 0px #0000001f;
+  border-bottom: 1px solid #dbdbdb;
+}

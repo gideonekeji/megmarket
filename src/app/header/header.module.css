@@ -1,0 +1,14 @@
+.clip-polygon {
+  clip-path: polygon(0% 100%, 62% 1%, 100% 1%, 33% 103%);
+}
+.polygoncontent {
+  clip-path: polygon(4% 0%, 100% 0%, 95% 110%, 0% 100%);
+}
+
+.Here-polygon {
+  clip-path: polygon(4% 0%, 100% 0%, 95% 110%, 0% 100%);
+}
+
+
+
+

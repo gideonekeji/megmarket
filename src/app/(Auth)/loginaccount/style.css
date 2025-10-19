@@ -1,0 +1,16 @@
+.inputboxborder {
+  border: 1px solid #efefef;
+}
+
+.inputboxborder:focus {
+  border: 1px solid #226FE4;
+}
+
+.signinbox {
+  backdrop-filter: blur(23.399999618530273px);
+  background-color: #226FE4;
+}
+
+.cheackboxborder {
+  border: 1.5px solid #717171;
+}

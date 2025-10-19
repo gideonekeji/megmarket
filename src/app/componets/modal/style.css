@@ -1,0 +1,25 @@
+.deleteac {
+  border-bottom: 1.39px solid #dbdbdb;
+  box-shadow: 0px 2.77px 13.87px 0px #0000001f;
+}
+
+.cancelbordercolor {
+  border: 1.31px solid #226FE4;
+}
+
+.feedbackbordercolor {
+  border: 1px solid #226FE4;
+  box-shadow: 2px 4px 14.4px 0px #0000000f;
+}
+
+.applanguagebordercolor {
+  border: 2px solid #226FE4;
+}
+
+.applanguagebordercolor11 {
+  border: 2px solid #226FE4;
+}
+
+.isvistedvbordercolor {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

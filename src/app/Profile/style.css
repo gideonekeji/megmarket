@@ -1,0 +1,24 @@
+.bordercolor {
+  border-bottom: 1px solid #ececec;
+}
+
+.rightsidebordershadow {
+  border-bottom: 1px solid #ececec;
+  box-shadow: 2px 4px 14.4px 0px #0000001a;
+}
+
+.bordercolordeletebtn {
+  border: 1px solid #226FE4;
+}
+
+.scrollhide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollhide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.bg-circle-icon {
+  filter: brightness(0) invert(1);
+}

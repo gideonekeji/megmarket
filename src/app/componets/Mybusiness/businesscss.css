@@ -1,0 +1,32 @@
+.businesslable {
+  box-shadow: 3.07px 6.14px 22.11px 0px #0000000F;
+  border-bottom: 1.54px solid #ECECEC
+}
+
+.bordercolorbusiness {
+  border: 5px solid #00ae5d1f;
+}
+
+.sahdograpg {
+  box-shadow: 0px 0px 10px 0px #00000040;
+}
+
+.bordercolorfillbusiness {
+  border: 5px solid #00ae5d;
+}
+
+.modalbordercolor {
+  box-shadow: 0px 2px 10px 0px #0000001f;
+
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.employe {
+  box-shadow: 2px 4px 14.4px 0px #0000000f;
+
+  border: 1px solid #ececec;
+}
+
+.bordercolorservice {
+  border: 2px solid #226FE4;
+}

@@ -1,0 +1,649 @@
+/* Importing Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font declaration */
+@font-face {
+  font-family: "AmericanSign";
+  src: url("../../public/assets/Font/brittany_signature/BrittanySignature.ttf");
+}
+
+
+
+:root {
+  --color-primary: #ffffff;
+  --active-profile: #226FE414;
+  --primary-color-text: #226FE4;
+  --btn-color: #452B7A;
+  --gradient-color: #226FE4;
+  --color-bordercolor: #226FE424;
+  --color-textcolor: black;
+  --color-textcolorsecondary: black;
+  --color-bordercolortop: #F2F2F2;
+  --color-placeholdercolor: #0000004F;
+  --color-reporttextcolor: #00162e;
+  --color-paginationtextcolor: #333333;
+  --color-toggalbtcolorborder: #226FE4;
+  --color-Relldetailscrencolor: #3A3A3A;
+  --color-Relldetailscrencolordate: #B0B0B0;
+  --color-inputbgcolor: #00000005;
+  --color-sidebartextcolor: #5B5B5B;
+  --color-maincolor: #226FE4;
+  --color-headercolortable: #D5D5D5;
+  --color-darklightbgcolor: linear-gradient(141.72deg, rgba(35, 156, 87, 0.1) -1.01%, rgba(1, 159, 200, 0.1) 103.86%);
+  --color-vendorviewbordercolor: #FF4B4B26;
+  --color-vendorcolor: #FF4B4B;
+}
+
+.dark {
+  --color-primary: #101011;
+  --gradient-color: #226FE4;
+  --color-bordercolor: #2A2727;
+  --color-textcolor: white;
+  --color-textcolorsecondary: #6a7282;
+  --color-bordercolortop: #1F1F1F;
+  --color-placeholdercolor: #ffffffa4;
+  --color-reporttextcolor: white;
+  --color-paginationtextcolor: white;
+  --color-toggalbtcolorborder: #226FE4;
+  --color-Relldetailscrencolor: white;
+  --color-Relldetailscrencolordate: white;
+  --color-inputbgcolor: ##101011;
+  --color-sidebartextcolor: white;
+  --color-maincolor: #226FE4;
+  --color-headercolortable: #212020;
+  --color-vendorviewbordercolor: #FF4B4B26;
+  --color-vendorcolor: #FF4B4B;
+
+
+}
+
+
+/* === Theme Variables === */
+@theme {
+  --color-primary: ;
+  --gradient-color: ;
+  --color-bordercolor: ;
+  --color-textcolor: ;
+  --primary-color-text: ;
+  --color-textcolorsecondary: ;
+  --color-bordercolortop: ;
+  --color-placeholdercolor: ;
+  --color-reporttextcolor: ;
+  --color-paginationtextcolor: ;
+  --color-toggalbtcolorborder: ;
+  --color-Relldetailscrencolor: ;
+  --color-Relldetailscrencolordate: ;
+  --color-inputbgcolor: ;
+  --color-sidebartextcolor: ;
+  --color-maincolor: ;
+  --color-headercolortable: ;
+  --color-vendorviewbordercolor: ;
+  --color-vendorcolor: ;
+
+}
+
+
+/* Font classes */
+.AmericanSign {
+  font-family: "AmericanSign", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: white;
+  overflow-y: scroll;
+  font-family: 'Poppins', sans-serif;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+/* Utility classes */
+@layer utilities {
+  .clip-polygon {
+    clip-path: polygon(0% 100%, 62% 1%, 100% 1%, 33% 103%);
+  }
+
+  .polygoncontent {
+    clip-path: polygon(4% 0%, 100% 0%, 95% 110%, 0% 100%);
+  }
+
+  .Here-polygon {
+    clip-path: polygon(4% 0%, 100% 0%, 95% 110%, 0% 100%);
+  }
+}
+
+/* Footer background images */
+.backgroundImage {
+  background-image: url("../../public/assets/Image/fotterbg2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.backgroundImage2 {
+  background-image: url("../../public/assets/Image/fotterbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.subscribebgimage {
+  background-image: url("../../public/assets/Image/subscribe.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hero Section */
+.HomeHeroSection {
+  background-image: url("../../public/assets/Image/homepagebg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Borders and lines */
+.border-linecss {
+  border-left: 6px solid #ffffff;
+}
+
+
+.cardggradinendcolor {
+  background: linear-gradient(180.54deg, rgba(0, 0, 0, 0) 20.19%, rgba(0, 0, 0, 0.64) 59.47%);
+}
+
+
+
+#ColorBG {
+  background: linear-gradient(176.96deg, rgba(34, 111, 228, 0.41) -37.76%, #001D48 114.06%);
+  opacity: 0.85;
+  /* Optional tweak */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Gradient backgrounds */
+.linear-color {
+  background: linear-gradient(90deg,
+      rgba(200, 222, 255, 0.16) 0%,
+      rgba(22, 66, 135, 0) 100%);
+}
+
+.linear-color1 {
+  background: linear-gradient(188.54deg,
+      rgba(0, 0, 0, 0) 20.19%,
+      rgba(0, 0, 0, 0.66) 57.79%,
+      rgba(0, 0, 0, 0.87) 93.47%);
+}
+
+
+
+.section4linearbgcolor {
+  background: linear-gradient(180deg,
+      rgba(0, 70, 174, 0) 0%,
+      rgba(0, 70, 174, 0.53) 100%);
+}
+
+.section4linearcloor {
+  background: linear-gradient(131.07deg, #226FE4 -10.83%, #001d48 94.82%);
+}
+
+.section4box2 {
+  background: linear-gradient(176.96deg,
+      rgba(0, 70, 174, 0.41) -37.76%,
+      #001d48 114.06%);
+}
+
+/* Shadow effects */
+.shadow {
+  box-shadow: 2px 2px 6.3px 0px #0000001f;
+}
+
+.shadowsection8card {
+  box-shadow: 3.35px 3.35px 8.9px 0px #00000014;
+  border: 0.48px solid var(--Logo-color, #226FE4);
+}
+
+/* Hide carousel arrows */
+.slick-prev,
+.slick-next {
+  visibility: hidden;
+}
+
+/* Clip-path utilities */
+.clip-path-image {
+  clip-path: polygon(50% 0%,
+      100% 0%,
+      100% 35%,
+      100% 100%,
+      80% 90%,
+      47% 71%,
+      20% 88%,
+      0 100%,
+      0% 35%,
+      0 0);
+}
+
+/* Border styles */
+.border-color {
+  border: 1px solid var(--Logo-color, #226FE4);
+}
+
+
+#border-color {
+  box-shadow: 2.53px 2.53px 21.4px 0px #0000001a;
+}
+
+/* Heart icon background */
+.hearticonbgcolor {
+  backdrop-filter: blur(9.75px);
+}
+
+.header-area {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: (#ffffff, 0.9);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: 0px 8px 60px rgba(24, 24, 24, 0.1);
+  animation: slideDown 0.9s ease-out 1;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.profileimageborderocolor {
+  border: 3px solid transparent;
+  /* Makes sure the border is applied */
+  border-radius: 50%;
+  /* Ensures the image remains circular */
+  background-image: linear-gradient(327.99deg, #005aae 17.81%, #ffffff 64.02%);
+  background-origin: border-box;
+  /* Ensures the background gradient applies to the border */
+  background-clip: content-box, border-box;
+  /* Applies the gradient to the border area */
+}
+
+.bg-circle-icon {
+  filter: brightness(0) invert(1);
+}
+
+
+.css-rohclq-MuiFormControl-root-MuiTextField-root .MuiInputBase-input {
+  color: #000000 !important;
+}
+
+.css-19t1te9-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-19t1te9-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-19t1te9-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #000000 !important;
+  opacity: 50% !important;
+  font-family: "Poppins", serif;
+  font-weight: 400 !important;
+}
+
+.css-lohd6h-MuiSvgIcon-root-MuiSelect-icon {
+  color: white !important;
+}
+
+
+/* globals.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+
+/*  home  screnn color  */
+
+
+#bordercolorwithgradient {
+  background: linear-gradient(90deg, rgba(200, 222, 255, 0.16) 0%, rgba(22, 66, 135, 0) 100%);
+
+}
+
+
+
+/*  for text editor new upodated package  */
+
+.ql-toolbar.ql-snow {
+  border: var(--color-bordercolor) 1px solid !important;
+  margin-bottom: 1rem !important;
+  border-radius: 0.4rem !important;
+}
+
+
+.ql-editor {
+  border: var(--color-bordercolor) 1px solid !important;
+  height: 200px !important;
+  border-radius: 0.4rem !important;
+  color: var(--color-textcolor);
+  font-size: 18px !important;
+}
+
+
+
+.ql-container.ql-snow {
+  border: none !important;
+}
+
+
+.ql-editor.ql-blank::before {
+  color: var(--color-textcolor) !important;
+  opacity: 1 !important;
+  /* Ensures it's fully visible */
+}
+
+
+/*  new update color  */
+
+
+.hearbgcolor {
+  backdrop-filter: blur(9.748623847961426px);
+  background-color: #0000001A;
+}
+
+
+
+/*  input color  */
+@layer components {
+  .input-primary {
+    @apply font-poppins w-full rounded-[10px] py-[14px] pl-4 text-sm font-normal dark:text-dark-darkcolor dark:bg-dark-bginput focus:border-light-bordercolo-focusbordercolo focus:outline-none focus:ring-[#226FE480] border dark:border-dark-bordercolorinput border-light-bordercolo-maincolor;
+  }
+
+  .input-primary::placeholder {
+    @apply text-sm font-normal text-[#B4B4B4];
+  }
+}
+
+
+
+.dark .css-jupps9-MuiInputBase-root-MuiOutlinedInput-root {
+  border: solid 1px #FFFFFF52 !important;
+  border-radius: 0.5rem !important;
+}
+
+
+.dark .css-113d811-MuiFormLabel-root-MuiInputLabel-root {
+  display: none;
+}
+
+
+.dark .css-1dune0f-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #FFF !important;
+}
+
+
+.css-jupps9-MuiInputBase-root-MuiOutlinedInput-root {
+  border: solid 1px #FFFFFF52 !important;
+  border-radius: 0.5rem !important;
+}
+
+
+.dark .css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root {
+  color: #FFF !important;
+}
+
+
+
+.dark .css-1umw9bq-MuiSvgIcon-root {
+  color: #FFF !important;
+}
+
+
+.dark .css-1y6l765-MuiPickersLayout-root {
+  background-color: #2F2F2F !important;
+}
+
+
+
+.dark .css-ux17pc-MuiButtonBase-root-MuiMenuItem-root-MuiMultiSectionDigitalClockSection-item {
+  color: white !important;
+}
+
+
+.dark .react-tel-input .country-list {
+  border: #363636 solid 1px !important;
+  border-radius: 9px !important;
+}
+
+
+.dark .react-tel-input .country-list .search {
+
+  background-color: #2F2F2F !important;
+  color: #FFF !important;
+
+}
+
+
+
+.dark .react-tel-input .country-list .search-box {
+
+  background-color: #2F2F2F !important;
+  color: #FFF !important;
+
+}
+
+
+.dark .react-tel-input .country-list {
+  background-color: #212121 !important;
+}
+
+
+.dark .react-tel-input .country-list .country {
+  color: #FFF !important;
+}
+
+
+.dark .react-tel-input .country-list .country .dial-code {
+  color: white !important;
+}
+
+
+.dark .react-tel-input .country-list .country:hover, .react-tel-input .country-list .country.highlight {
+  background-color: #226FE4 !important;
+  color: white !important;
+}
+
+.dark .react-tel-input {
+  color: white !important;
+}
+
+
+
+/*  my businesss css
+ */
+
+
+
+
+.bordercolorwithshado {
+  box-shadow: 3.07px 6.14px 22.11px 0px #0000000F;
+  border-bottom: 1.54px solid #ECECEC
+}
+
+
+.PhoneInputInput:focus-visible {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+}
+
+.form-control {
+  border: 1px solid #226FE41A !important;
+  border-radius: 0.5rem !important;
+  height: 54px !important;
+  width: 100% !important;
+}
+
+.form-control:focus {
+  border: 1px solid #226FE4 !important;
+}
+
+
+.dark .form-control {
+  background-color: #B4B4B414 !important;
+  /* Dark mode */
+}
+
+.dark .form-control {
+  border: 1px solid #B4B4B414 !important;
+}
+
+.selected-flag {
+  border: none !important;
+  border-right: 1px solid #cacaca !important;
+  width: 3.5rem !important;
+  padding-left: 10px !important;
+}
+
+.flag-dropdown {
+  border: none !important;
+  background: none !important;
+  border-right: 1px !important;
+}
+
+.PhoneInputCountryIcon {
+  border: none !important;
+  background: transparent !important;
+}
+
+.special-label {
+  display: none !important;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  background-color: transparent !important;
+}
+
+.react-tel-input .selected-flag {
+  background-color: transparent !important;
+}
+
+.react-tel-input .country-list .search {
+  border-bottom: 1px solid #ddd !important;
+}
+
+.react-tel-input .country-list .search-box {
+  width: 90% !important;
+  padding: 10px 15px !important;
+  color: #000000 !important;
+  font-weight: 500 !important;
+}
+
+.react-tel-input .country-list {
+  outline: none !important;
+  z-index: 1 !important;
+  list-style: none !important;
+  position: absolute !important;
+  padding: 0 !important;
+  margin: 10px 0 10px -1px !important;
+  box-shadow: 1px 2px 10px #00000059 !important;
+  background-color: #fff !important;
+  max-height: 224px !important;
+  overflow-y: scroll !important;
+  border-radius: 7px !important;
+  border: 1px solid #ddd !important;
+}
+
+.react-tel-input .country-list .search-box {
+  width: 90% !important;
+  padding: 10px 15px !important;
+  color: #000000 !important;
+  font-weight: 500 !important;
+  border-radius: 5px !important;
+  border: none !important;
+  outline: none !important;
+  transition: width 0.3s ease-in-out !important;
+}
+
+/* extra small */
+
+/* mobail screeen */
+/* Extra small (mobile) screens */
+@media (max-width: 400px) {
+  .react-tel-input .country-list {
+    width: 300px !important;
+  }
+}
+
+/* Small (tablet and mobile) screens */
+@media (min-width: 401px) and (max-width: 768px) {
+  .react-tel-input .country-list {
+    width: 340px !important;
+  }
+}
+
+/* Medium (tablet) screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .react-tel-input .country-list {
+    width: 370px !important;
+  }
+}
+
+/* Large (desktop) screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .react-tel-input .country-list {
+    width: 420px !important;
+  }
+}
+
+/* Extra large (large desktop) screens */
+@media (min-width: 1201px) {
+  .react-tel-input .country-list {
+    width: 432px !important;
+  }
+}
+
