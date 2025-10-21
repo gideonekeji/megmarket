@@ -299,22 +299,7 @@ export default function LoginModal() {
 
 
 
-                {/* Demo Detail */}
-                <div className="w-full rounded-lg  gap-[2px]   flex-col  flex  mt-6">
-                  {/* Label: Free Demo */}
-                  <div className=" w-full  rounded-t-lg p-4 bg-[#226FE438]" >
-                    <h5 className="text-[15px] font-semibold  text-black dark:text-dark-darkcolor font-poppins">For Demo</h5>
-                  </div>
-                  <div className="flex justify-between p-4 rounded-b-lg bg-[#226FE438] items-start gap-4">
-                    {/* Email & Password */}
-                    <div className="flex flex-col gap-2 w-full font-poppins text-sm text-black  dark:text-dark-darkcolor">
-                      <div className="flex items-center gap-2">
-                        <span className="font-medium">Email ID:</span> john@demo.com
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="font-medium">Password:</span> 123456
-                      </div>
-                    </div>
+                
 
                     {/* Icon */}
                     <div
