@@ -40,9 +40,7 @@ export default function LoginModal() {
     password: "",
   });
 
-  const demoCredentials = {
-    email: "john@demo.com",
-    password: "123456",
+ 
   };
 
 
