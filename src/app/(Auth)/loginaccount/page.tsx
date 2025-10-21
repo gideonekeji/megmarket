@@ -301,19 +301,7 @@ export default function LoginModal() {
 
                 
 
-                    {/* Icon */}
-                    <div
-                      className="text-[#000]   dark:text-dark-darkcolor cursor-pointer mt-1"
-
-                      onClick={() => {
-                        setFormData({
-                          email: demoCredentials.email,
-                          password: demoCredentials.password,
-                        });
-
-                        const demoText = `Email: ${demoCredentials.email}\nPassword: ${demoCredentials.password}`;
-                        navigator.clipboard.writeText(demoText);
-                      }}
+                    
                     >
                       <svg
                         stroke="currentColor"
