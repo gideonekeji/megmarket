@@ -40,10 +40,6 @@ export default function LoginModal() {
     password: "",
   });
 
- 
-  };
-
-
   const [showPassword, setShowPassword] = useState(false);
 
   // Handle form input changes
@@ -54,10 +50,6 @@ export default function LoginModal() {
       [name]: type === "checkbox" ? checked : value,
     }));
   };
-
-
-
-
 
   // Handle form submission
   const handleSubmit = async (e: React.FormEvent) => {
@@ -73,30 +65,23 @@ export default function LoginModal() {
     try {
       const userData = await loginuser(formData).unwrap();
 
-
       dispatch(loginSuccess(userData));
 
       if (!userData?.user_block) {
-        toast.error("You are blocked by the admin so you can't login to your account")
+        toast.error("You are blocked by the admin so you can't login to your account");
         return;
       }
 
-
-
-
-
-      Cookies.set("nlyticalwebtoken", userData?.token)
-
+      Cookies.set("nlyticalwebtoken", userData?.token);
       Cookies.set("user_id", userData?.user_id);
-
       Cookies.set("login_type", userData?.login_type);
       Cookies.set("is_store", userData?.is_store);
       Cookies.set("service_id", userData?.service_id);
       Cookies.set("loginuser", "user_login");
+
       toast.success("Login successful!");
-      // Optionally, hide the modal after successful login
       dispatch(hideModal("loginModal"));
-      window.location.href = "/"
+      window.location.href = "/";
     } catch (error) {
       dispatch(loginFailure(error));
       toast.error("Login failed. Please try again.");
@@ -105,39 +90,33 @@ export default function LoginModal() {
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLFormElement>) => {
     if (e.key === "Enter") {
-      e.preventDefault(); // Prevent default behavior
-      handleSubmit(e); // Call form submission function
+      e.preventDefault();
+      handleSubmit(e);
     }
   };
 
   // modal close
-
-
-  const location = usePathname()
+  const location = usePathname();
   const vendor_id = Cookies.get("user_id");
 
   const handleModalClose = () => {
-    // Prevent closing the modal on '/bussines' route if user_id does not exist
     if (location === "/bussines" && !vendor_id) {
       toast.warn("You must log in to proceed.");
-      return; // Prevent modal from closing
+      return;
     }
     dispatch(hideModal("loginModal"));
   };
-
 
   const isDarkMode = useAppSelector((state) => state.darkMode);
 
   useEffect(() => {
     const inputs = document.querySelectorAll("input");
 
-    // Set readonly attribute initially
     inputs.forEach((input) => {
       input.setAttribute("readonly", true);
     });
 
-    // Remove readonly attribute on click
-    const handleClick = (event) => {
+    const handleClick = (event: any) => {
       event.target.removeAttribute("readonly");
     };
 
@@ -145,7 +124,6 @@ export default function LoginModal() {
       input.addEventListener("click", handleClick);
     });
 
-    // Cleanup event listeners when component unmounts
     return () => {
       inputs.forEach((input) => {
         input.removeEventListener("click", handleClick);
@@ -164,27 +142,28 @@ export default function LoginModal() {
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
             }}
-            className="w-full max-w-[490px] rounded-xl bg-white    px-[20px]   xl:px-[50px]   dark:bg-dark-secondarybg  shadow-[rgba(17,_17,_26,_0.3)_0px_0px_16px] backdrop-blur-md transition-all duration-300 ease-in-out"
+            className="w-full max-w-[490px] rounded-xl bg-white px-[20px] xl:px-[50px] dark:bg-dark-secondarybg shadow-[rgba(17,_17,_26,_0.3)_0px_0px_16px] backdrop-blur-md transition-all duration-300 ease-in-out"
           >
             <div
-              className="  w-full   relative    flex   items-center  justify-end    cursor-pointer"
+              className="w-full relative flex items-center justify-end cursor-pointer"
               onClick={handleModalClose}
             >
-              <div className=" w-8 h-8   absolute  right-[-1rem] xl:right-[-3rem]  top-[0.2rem] rounded-full  bg-light-button-base flex justify-center items-center">
+              <div className="w-8 h-8 absolute right-[-1rem] xl:right-[-3rem] top-[0.2rem] rounded-full bg-light-button-base flex justify-center items-center">
                 <Image
                   src={crossicon}
-                  className={` w-full h-full  ${isDarkMode ? " invert" : ""}`}
+                  className={`w-full h-full ${isDarkMode ? "invert" : ""}`}
                   alt="crossicon"
                 />
               </div>
             </div>
+
             <div className="mb-6 flex w-full flex-col items-center justify-center">
               <Image
                 src={logo}
                 alt="Logo"
                 className="h-24 w-[11rem] object-contain"
               />
-              <p className="font-poppins mx-auto mt-1 text-T5 px-4 text-center       dark:text-[#B4B4B4] text-[#717171] sm:px-6">
+              <p className="font-poppins mx-auto mt-1 text-T5 px-4 text-center dark:text-[#B4B4B4] text-[#717171] sm:px-6">
                 {getTranslation(
                   "Discover more about our app by registering or logging in.",
                   "Discover more about our app by registering or logging in."
@@ -193,15 +172,11 @@ export default function LoginModal() {
             </div>
 
             <div className="w-full">
-              <form
-                onSubmit={handleSubmit}
-                onKeyDown={handleKeyDown}
-                className=""
-              >
+              <form onSubmit={handleSubmit} onKeyDown={handleKeyDown}>
                 {/* Email Input */}
                 <div className="mb-5">
                   <label
-                    className=" text-B4 dark:text-dark-darkcolor text-[#000000]"
+                    className="text-B4 dark:text-dark-darkcolor text-[#000000]"
                     htmlFor="email"
                   >
                     {getTranslation("Email Address", "Email Address")}
@@ -212,7 +187,7 @@ export default function LoginModal() {
                       type="email"
                       id="email"
                       name="email"
-                      className={`font-poppins w-full rounded-[10px] py-[14px] pl-4  dark:text-dark-darkcolor placeholder-[#B4B4B4]  dark:bg-dark-bginput   focus:border-light-bordercolo-focusbordercolo focus:outline-none focus:ring-[#226FE480]  border dark:border-dark-bordercolorinput  border-light-bordercolo-maincolor`}
+                      className="font-poppins w-full rounded-[10px] py-[14px] pl-4 dark:text-dark-darkcolor placeholder-[#B4B4B4] dark:bg-dark-bginput focus:border-light-bordercolo-focusbordercolo focus:outline-none focus:ring-[#226FE480] border dark:border-dark-bordercolorinput border-light-bordercolo-maincolor"
                       placeholder="Enter your email"
                       onChange={handleInputChange}
                       value={formData.email || ""}
@@ -222,7 +197,7 @@ export default function LoginModal() {
                       <Image
                         src={emailicon}
                         alt="Email Icon"
-                        className="  h-[46%]  w-[46%] object-cover"
+                        className="h-[46%] w-[46%] object-cover"
                       />
                     </span>
                   </div>
@@ -231,8 +206,7 @@ export default function LoginModal() {
                 {/* Password Input */}
                 <div className="mb-5">
                   <label
-                    className=" text-B4 dark:text-dark-darkcolor text-[#000000]"
-
+                    className="text-B4 dark:text-dark-darkcolor text-[#000000]"
                     htmlFor="password"
                   >
                     {getTranslation("Password", "Password")}
@@ -243,7 +217,7 @@ export default function LoginModal() {
                       type={showPassword ? "text" : "password"}
                       id="password"
                       name="password"
-                      className={`font-poppins w-full rounded-[10px] py-[14px] pl-4  dark:text-dark-darkcolor placeholder-[#B4B4B4]  dark:bg-dark-bginput   focus:border-light-bordercolo-focusbordercolo focus:outline-none focus:ring-[#226FE480]  border dark:border-dark-bordercolorinput  border-light-bordercolo-maincolor`}
+                      className="font-poppins w-full rounded-[10px] py-[14px] pl-4 dark:text-dark-darkcolor placeholder-[#B4B4B4] dark:bg-dark-bginput focus:border-light-bordercolo-focusbordercolo focus:outline-none focus:ring-[#226FE480] border dark:border-dark-bordercolorinput border-light-bordercolo-maincolor"
                       placeholder="Enter your password"
                       onChange={handleInputChange}
                       value={formData.password || ""}
@@ -256,7 +230,7 @@ export default function LoginModal() {
                       <Image
                         src={showPassword ? eyeOpenIcon : pwdicon}
                         alt="Toggle Password Visibility"
-                        className="  h-[46%]  w-[46%] object-cover"
+                        className="h-[46%] w-[46%] object-cover"
                       />
                     </span>
                   </div>
@@ -276,7 +250,7 @@ export default function LoginModal() {
                   </div>
 
                   <button
-                    className="font-poppins text-sm font-medium   text-light-button-base"
+                    className="font-poppins text-sm font-medium text-light-button-base"
                     onClick={() => {
                       dispatch(showModal("ForgotPasswordModal"));
                       handleModalClose();
@@ -297,37 +271,31 @@ export default function LoginModal() {
                   </button>
                 </div>
 
-
-
-                
-
-                    
-                    >
-                      <svg
-                        stroke="currentColor"
-                        fill="none"
-                        strokeWidth="2"
-                        viewBox="0 0 24 24"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-xl"
-                        height="1.2em"
-                        width="1.2em"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z"></path>
-                        <path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"></path>
-                      </svg>
-                    </div>
-
-
-                  </div>
+                {/* Removed stray '>' and kept SVG block valid */}
+                <div className="flex items-center justify-center mt-4">
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="text-xl"
+                    height="1.2em"
+                    width="1.2em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z"></path>
+                    <path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"></path>
+                  </svg>
                 </div>
 
                 {/* Divider */}
                 <div className="mt-4 flex w-full items-center justify-center gap-2">
                   <div className="my-2 flex h-[2px] w-full rounded-md bg-[#D0D0D0]" />
-                  <p className="font-poppins text-[22px] dark:text-dark-darkcolor text-[#3A3333]">or</p>
+                  <p className="font-poppins text-[22px] dark:text-dark-darkcolor text-[#3A3333]">
+                    or
+                  </p>
                   <div className="my-2 flex h-[2px] w-full rounded-md bg-[#D0D0D0]" />
                 </div>
 
@@ -348,7 +316,7 @@ export default function LoginModal() {
                         className="h-full w-full object-contain"
                       />
                     </div>
-                    <p className="font-poppins text-sm font-medium   dark:text-dark-darkcolor text-[#3A3333]">
+                    <p className="font-poppins text-sm font-medium dark:text-dark-darkcolor text-[#3A3333]">
                       {getTranslation(
                         "Continue with Number",
                         "Continue with Number"
@@ -358,15 +326,14 @@ export default function LoginModal() {
                 </div>
 
                 {/* Sign Up Link */}
-                <div className="  py-6 flex items-center justify-center">
-                  <p className="text-sm  dark:text-[#B4B4B4] text-[#717171]">
-                    {" "}
+                <div className="py-6 flex items-center justify-center">
+                  <p className="text-sm dark:text-[#B4B4B4] text-[#717171]">
                     {getTranslation(
                       "Don’t have an account?",
                       "Don’t have an account?"
                     )}
                     <button
-                      className="cursor-pointer pl-1 font-medium  text-light-button-base"
+                      className="cursor-pointer pl-1 font-medium text-light-button-base"
                       onClick={() => {
                         dispatch(showModal("RegisterModal"));
                         handleModalClose();
