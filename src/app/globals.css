@@ -41,7 +41,7 @@
 
 .dark {
   --color-primary: #101011;
-  --gradient-color: #226FE4;
+  --gradient-color: #f12b0c;
   --color-bordercolor: #2A2727;
   --color-textcolor: white;
   --color-textcolorsecondary: #6a7282;
@@ -49,12 +49,12 @@
   --color-placeholdercolor: #ffffffa4;
   --color-reporttextcolor: white;
   --color-paginationtextcolor: white;
-  --color-toggalbtcolorborder: #226FE4;
+  --color-toggalbtcolorborder: #f12b0c;
   --color-Relldetailscrencolor: white;
   --color-Relldetailscrencolordate: white;
   --color-inputbgcolor: ##101011;
   --color-sidebartextcolor: white;
-  --color-maincolor: #226FE4;
+  --color-maincolor: #f12b0c;
   --color-headercolortable: #212020;
   --color-vendorviewbordercolor: #FF4B4B26;
   --color-vendorcolor: #FF4B4B;
@@ -209,7 +209,7 @@ body::-webkit-scrollbar {
 }
 
 .section4linearcloor {
-  background: linear-gradient(131.07deg, #226FE4 -10.83%, #001d48 94.82%);
+  background: linear-gradient(131.07deg, #f12b0c -10.83%, #001d48 94.82%);
 }
 
 .section4box2 {
@@ -225,7 +225,7 @@ body::-webkit-scrollbar {
 
 .shadowsection8card {
   box-shadow: 3.35px 3.35px 8.9px 0px #00000014;
-  border: 0.48px solid var(--Logo-color, #226FE4);
+  border: 0.48px solid var(--Logo-color, #f12b0c);
 }
 
 /* Hide carousel arrows */
@@ -250,7 +250,7 @@ body::-webkit-scrollbar {
 
 /* Border styles */
 .border-color {
-  border: 1px solid var(--Logo-color, #226FE4);
+  border: 1px solid var(--Logo-color, #f12b0c);
 }
 
 
@@ -491,7 +491,7 @@ body::-webkit-scrollbar {
 
 
 .dark .react-tel-input .country-list .country:hover, .react-tel-input .country-list .country.highlight {
-  background-color: #226FE4 !important;
+  background-color: #f12b0c !important;
   color: white !important;
 }
 
@@ -521,14 +521,14 @@ body::-webkit-scrollbar {
 }
 
 .form-control {
-  border: 1px solid #226FE41A !important;
+  border: 1px solid #f12b0c !important;
   border-radius: 0.5rem !important;
   height: 54px !important;
   width: 100% !important;
 }
 
 .form-control:focus {
-  border: 1px solid #226FE4 !important;
+  border: 1px solid #f12b0c !important;
 }
 
 
