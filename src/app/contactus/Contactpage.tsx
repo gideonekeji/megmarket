@@ -97,7 +97,7 @@ function Contactpage() {
               className={`text-lg sm:text-base md:text-lg xl:text-lg  font-poppins  ${isDarkMode ? "text-[#FFFFFFBA]" : "text-[#212121]"
                 }`}
             >
-              info@megmarketafrica.com
+              info@megmarket.africa
             </p>
           </div>
         </div>
